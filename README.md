@@ -53,3 +53,13 @@ npm install
 
 # Run locally
 npm run dev
+```
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+You’re free to use, modify, and learn from the code for personal or educational purposes.  
+Please do not present this work as your own portfolio without proper attribution.
+
+© Om Ramani
