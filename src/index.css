@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system – all colors in HSL */
+
+@layer base {
+  :root {
+    --background: 220 50% 8%;
+    --foreground: 190 70% 95%;
+
+    --card: 220 45% 12%;
+    --card-foreground: 190 70% 95%;
+
+    --popover: 220 45% 10%;
+    --popover-foreground: 190 70% 95%;
+
+    --primary: 190 100% 50%;
+    --primary-foreground: 220 50% 10%;
+
+    --secondary: 260 60% 50%;
+    --secondary-foreground: 190 70% 95%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 190 30% 60%;
+
+    --border: 220 30% 25%;
+    --input: 220 30% 20%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Theme tokens */
+    --glow: 190 100% 50%;
+    --glow-soft: 190 80% 40%;
+    --gradient-start: 190 90% 45%;
+    --gradient-mid: 220 70% 45%;
+    --gradient-end: 260 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow:
+      0 0 20px hsl(var(--glow) / 0.5),
+      0 0 40px hsl(var(--glow) / 0.3),
+      0 0 60px hsl(var(--glow) / 0.2);
+  }
+
+  .glow-border {
+    box-shadow:
+      0 0 20px hsl(var(--glow) / 0.3),
+      inset 0 0 20px hsl(var(--glow) / 0.1);
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-start)),
+      hsl(var(--gradient-mid)),
+      hsl(var(--gradient-end))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .data-grid {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@layer components {
+  .secondary-hero-btn {
+    @apply font-semibold tracking-wide px-8 py-6 rounded-xl border-2 border-primary/40 text-primary hover:bg-primary/10 hover:border-primary transition-all;
+  }
+
+  .nav-pill {
+    @apply px-6 py-2 rounded-xl border border-primary/30 text-primary bg-transparent font-medium transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:glow-border;
+  }
+
+  .nav-pill-active {
+    @apply bg-primary text-primary-foreground border-primary glow-border;
+  }
+}
