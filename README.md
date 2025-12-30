@@ -3,7 +3,6 @@
 A modern, interactive portfolio showcasing my work in **AI/ML, Data Science, and Computer Vision**, built to highlight real-world projects, hands-on experience, and technical depth.
 
 🔗 **Live Website:** https://om-ramani.vercel.app  
-📌 **GitHub:** https://github.com/pinocchio02
 
 ---
 
