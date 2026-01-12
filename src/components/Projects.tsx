@@ -91,7 +91,24 @@ const projects: Project[] = [
     thumbnail: "/projects/logs_class.png",
     category: "ML",
     github: "https://github.com/pinocchio02/log-classification"
-  }
+  },
+  {
+    id: 5,
+    title: "Jet Engine RUL Predictor(Predictive Maintenance)",
+    shortDescription:
+      "Real-time jet engine failure predictor deployed on Streamlit using NASA CMAPSS sensor telemetry",
+    longDescription:
+      "Developed a full-stack ML application to predict jet engine failure using the NASA CMAPSS dataset. Engineered advanced lag and rolling window features to capture temporal degradation, optimizing a Random Forest regressor. Deployed the solution on Streamlit Cloud, providing a user-friendly dashboard for real-time sensor monitoring and life-cycle estimation.",
+    tags: ["Python", "Scikit-learn", "Streamlit", "Joblib", "Pandas", "NumPy"],
+    images: [
+      "/projects/jet-1.png",
+      "/projects/jet-2.png",
+    ],
+    thumbnail: "/projects/jet_engine.jpg",
+    category: "ML",
+    demo: "https://om-engine-predictor.streamlit.app/",
+    github: "https://github.com/pinocchio02/Predictive-Maintenance",
+  },
 ];
 
 const categories = ["All", "ML", "Deep Learning", "Computer Vision"];
@@ -301,6 +318,23 @@ const Projects = () => {
                             </Badge>
                           ))}
                         </div>
+                        {/* Live Demo Link */}
+                        {project.demo && (
+                          <div className="mt-4">
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="w-full border-primary/30 hover:border-primary hover:bg-primary/10"
+                              asChild
+                            >
+                              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                                <ExternalLink className="h-4 w-4 mr-2" />
+                                Live Demo
+                              </a>
+                            </Button>
+                          </div>
+                        )}
+
                       </motion.div>
                     )}
                   </AnimatePresence>
