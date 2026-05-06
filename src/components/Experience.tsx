@@ -4,8 +4,19 @@ import { Briefcase, Award, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    title: "Data Engineer Intern",
+    company: "Genaiology · Remote, USA",
+    period: "Feb 2026 – May 2026",
+    description: [
+      "Engineered automated AWS data pipelines (Python/S3), consolidating 150,000+ partitioned records and reducing processing time and cloud costs by >90%.",
+      "Developed autonomous Agentic AI workflows (AWS Bedrock) for Houston Public Works, enabling instant natural-language querying across massive SCADA and ICM datasets.",
+      "Designed Retrieval-Augmented Generation (RAG) architectures, empowering AI agents to autonomously map complex database schemas and dynamically generate optimized SQL queries for Amazon Redshift.",
+    ],
+    type: "experience",
+  },
+  {
     title: "AI intern",
-    company: "Molmeh Technolabs",
+    company: "Molmeh Technolabs · On-site, India",
     period: "Jan 2024 - April 2024",
     description: [
       "Engineered 'Document Insights using Generative AI' platform using Python, Django, PostgreSQL, and BambooLLM.",
@@ -18,7 +29,7 @@ const experiences = [
   },
   {
     title: "AI Intern",
-    company: "Durian Pvt. Ltd.",
+    company: "Durian Pvt. Ltd. · On-site, India",
     period: "Jul 2023 - Aug 2023",
     description: [
       "Achieved 99.38% accuracy on Labeled Faces in the Wild benchmark using the dlib face recognition model, demonstrating advanced expertise in AI-based facial recognition.",
