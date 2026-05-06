@@ -96,7 +96,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg leading-relaxed text-muted-foreground mb-4">
-              I’m a Msc computer science student who enjoys working at the intersection of data, models, and real-world deployment. From training deep learning models to building end-to-end ML pipelines, I focus on creating solutions that are practical, measurable, and production-ready
+              I’m a Msc computer science student who enjoys working at the intersection of data, models, and real-world deployment. From training deep learning models to building end-to-end ML pipelines, I focus on creating solutions that are practical, measurable, and production-ready!
             </p>
 
             <div className="mt-">
