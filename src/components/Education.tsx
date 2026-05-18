@@ -16,7 +16,7 @@ const education: EducationItem[] = [
         degree: "Master of Science",
         major: "Computer Science",
         year: "2024 – 2026",
-        gpa: "GPA: 3.78 / 4.00",
+        gpa: "GPA: 3.8 / 4.00",
     },
     {
         institution: "Gandhinagar Institute of Technology",
