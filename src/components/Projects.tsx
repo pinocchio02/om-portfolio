@@ -70,6 +70,24 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: "CineScope",
+    shortDescription:
+      "End-to-end movie recommendation engine using Content-Based Filtering and K-Nearest Neighbors.",
+    longDescription:
+      "Developed a full-stack movie recommendation system featuring a modern React/TypeScript frontend and a robust Python/FastAPI backend. Implemented a K-Nearest Neighbors (KNN) algorithm with Cosine Similarity on the MovieLens dataset to provide real-time, personalized movie suggestions, advanced filtering, and instant search capabilities.",
+    tags: ["Machine Learning", "React", "TypeScript", "FastAPI", "Python", "Scikit-learn", "Tailwind CSS"],
+    images: [
+      "/projects/cinescope-1.png",
+      "/projects/cinescope-2.png",
+      "/projects/cinescope-3.png",
+    ],
+    thumbnail: "/projects/cinescope_thumb.jpg",
+    category: "ML",
+    demo: "https://cinescope22.vercel.app/",
+    github: "https://github.com/pinocchio02/CineScope",
+  },
+  {
+    id: 5,
     title: "Log Classification",
     shortDescription:
       "Hybrid ML framework for automated log classification and anomaly detection.",
@@ -93,7 +111,7 @@ const projects: Project[] = [
     github: "https://github.com/pinocchio02/log-classification"
   },
   {
-    id: 5,
+    id: 6,
     title: "Jet Engine RUL Predictor(Predictive Maintenance)",
     shortDescription:
       "Real-time jet engine failure predictor deployed on Streamlit using NASA CMAPSS sensor telemetry",
