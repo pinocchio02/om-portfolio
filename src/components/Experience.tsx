@@ -4,6 +4,16 @@ import { Briefcase, Award, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    title: "Quality Data Analyst Intern",
+    company: "Gilbarco Veeder-Root · NC, USA",
+    period: "June 2026 – Present",
+    description: [
+      "Built an end-to-end warranty-classification pipeline in Snowflake, combining a lightweight ML classifier with a retrieval-augmented LLM (Cortex + Claude) to process 400,000+ records while cutting LLM calls by ~70%.",
+      "Designed and validated the full data pipeline — Snowpark ETL, embedding-based retrieval, and automated symptom taxonomy generation — improving classification accuracy from 73% to 78% and growing the verified training set 4x.",
+    ],
+    type: "experience",
+  },
+  {
     title: "Data Engineer Intern",
     company: "Genaiology · Remote, USA",
     period: "Feb 2026 – May 2026",
